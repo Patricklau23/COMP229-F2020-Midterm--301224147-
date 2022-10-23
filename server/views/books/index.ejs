@@ -1,3 +1,8 @@
+<!-- /*File name:index.ejs
+Student name: Pak Tak Lau 
+Student ID: 301224147   
+Date: 23 Oct 2022*/ -->
+
 <% include ../partials/header.ejs %>
 
     <!-- MAIN CONTENT -->
@@ -15,22 +20,24 @@
             <table class="table table-bordered table-striped table-hover">
               <thead>
                 <tr>
-                  <th>Title</th>
+                  <th class="text-center">Title</th>
                   <th class="text-center">Price</th>
                   <th class="text-center">Author</th>
                   <th class="text-center">Genre</th>
-                  <th class="text-center"></th>
-                  <th class="text-center"></th>
+                  <th class="text-center">Description</th>
+                 
                 </tr>
                 </thead>
                 <tbody>
                 <!-- Template Row -->
                 <% for (let count = 0; count < books.length; count++) { %>
                 <tr>
-                  <td><%= books[count].Title %></td>
+                  <td class="text-center"><%= books[count].Title %></td>
                   <td class="text-center">$<%= books[count].Price %></td>
                   <td class="text-center"><%= books[count].Author %></td>
                   <td class="text-center"><%= books[count].Genre %></td>
+                  <td class="text-center"><%= books[count].Description %></td>
+             
 
                   <td class="text-center">
                     <a href="/books/edit/ <%= books[count]._id %>" class="btn btn-primary btn-sm">
