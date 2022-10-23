@@ -1,4 +1,4 @@
-<% include (../partials/header.ejs) %>
+<% include ../partials/header.ejs %>
 <!-- Content for the Edit page -->
 <div class="container">
     <div class="row">
@@ -12,7 +12,7 @@
                     id="nameTextField"
                     placeholder="Enter the Book Title"
                     name="name" 
-                    value="<%= book.name %>"
+                    value="<%= books.name %>"
                     required>
                 </div>
 
@@ -22,7 +22,7 @@
                     id="authorTextField"
                     placeholder="Enter the Book's Author"
                     name="author" 
-                    value="<%= book.author %>"
+                    value="<%= books.author %>"
                     required>
                 </div>
 
@@ -32,7 +32,7 @@
                     id="publishedTextField"
                     placeholder="Enter the Year of Publication"
                     name="published" 
-                    value="<%= book.published %>"
+                    value="<%= books.published %>"
                     required>
                 </div>
 
@@ -43,7 +43,7 @@
                     placeholder="Enter the a brief description of the book"
                     name="description" 
                     required>
-                    <%= book.description %>
+                    <%= books.description %>
                     </textarea>
                 </div>
 
@@ -53,14 +53,14 @@
                     id="priceTextField"
                     placeholder="Enter the Book's Price"
                     name="price" 
-                    value="<%= book.price %>"
+                    value="<%= books.price %>"
                     required>
                 </div>
 
                 <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i> Submit</button>
                 
-                    <a href="/book-list" class="btn btn-warning">
+                    <a href="/books" class="btn btn-warning">
                         <i class="fas fa-undo"></i> Cancel</a>
 
             </form>
@@ -69,5 +69,5 @@
     </div>
 </div>
 
-<% include (../partials/footer.ejs) %>
+<% include ../partials/footer.ejs %>
 
