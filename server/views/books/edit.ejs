@@ -17,7 +17,7 @@ Date: 23 Oct 2022*/ -->
                     id="nameTextField"
                     placeholder="Enter the Book Title"
                     name="name" 
-                    value="<%= books.name %>"
+                    value="<%= books.Title %>"
                     required>
                 </div>
 
@@ -27,17 +27,17 @@ Date: 23 Oct 2022*/ -->
                     id="authorTextField"
                     placeholder="Enter the Book's Author"
                     name="author" 
-                    value="<%= books.author %>"
+                    value="<%= books.Author %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="publishedTextField">Year</label>
+                    <label for="genreTextField">Genre</label>
                     <input type="text" class="form-control"
-                    id="publishedTextField"
-                    placeholder="Enter the Year of Publication"
-                    name="published" 
-                    value="<%= books.published %>"
+                    id="genreTextField"
+                    placeholder="Enter the Genre"
+                    name="genre" 
+                    value="<%= books.Genre %>"
                     required>
                 </div>
 
@@ -48,7 +48,7 @@ Date: 23 Oct 2022*/ -->
                     placeholder="Enter the a brief description of the book"
                     name="description" 
                     required>
-                    <%= books.description %>
+                    <%= books.Description %>
                     </textarea>
                 </div>
 
@@ -58,7 +58,7 @@ Date: 23 Oct 2022*/ -->
                     id="priceTextField"
                     placeholder="Enter the Book's Price"
                     name="price" 
-                    value="<%= books.price %>"
+                    value="<%= books.Price %>"
                     required>
                 </div>
 
